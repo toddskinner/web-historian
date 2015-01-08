@@ -6,6 +6,8 @@ var initialize = require("./initialize.js");
 // HINT:It has to do with what's in .gitignore
 initialize();
 
+//add a routes object
+
 var port = 8080;
 var ip = "127.0.0.1";
 var server = http.createServer(handler.handleRequest);

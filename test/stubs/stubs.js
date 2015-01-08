@@ -1,4 +1,4 @@
-exports.Request = function(url, method, postdata) {
+  exports.Request = function(url, method, postdata) {
   this.url = url;
   this.method = method;
   this._postData = postdata;
