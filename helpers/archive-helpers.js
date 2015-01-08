@@ -31,8 +31,11 @@ exports.readListOfUrls = function(){
 };  // read sites.txt
 
 exports.isUrlInList = function(fileContents, targetURL){
-  JSON.stringify(fileContents).split('/n')
-
+  var urls = JSON.stringify(fileContents).split('/n');
+  for (var i = 0; i < urls.length; i++){
+    if (targetURL === urls[i]) return true;
+  }
+  return false;
 
   //check if URL in sites.txt
 };
